@@ -38,7 +38,7 @@ SELECT FIRST_NAME AS EMPLOYEE_NAME,JOB_ID,CONCAT(FIRST_NAME,' & ',JOB_ID) AS EMP
  -- 7) Write a SQL query to find the employee ID, salary, and commission of all the employees. 
  
 
- SELECT EMPLOYEE_ID,SALARY,(SALARY*(COMMISSION_PCT)) AS COMMISION FROM EMPLOYEES;
+ SELECT EMPLOYEE_ID,SALARY,COMMISSION_PCT*100 AS COMMISION FROM EMPLOYEES;
  
  -- 8) Write a SQL query to find the unique department with jobs. Return department ID, Job name. 
  
